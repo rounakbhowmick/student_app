@@ -1,0 +1,6 @@
+<h3>Create  student</h3>
+<%= form_with model: @student do |f|%>
+<%= f.text_field :name, placeholder: "Name"%>
+<%= f.text_field :age, placeholder: "Age"%>
+<%= f.submit "Save Student" %>
+<% end %>
