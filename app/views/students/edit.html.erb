@@ -1,2 +1,6 @@
-<h1>Students#edit</h1>
-<p>Find me in app/views/students/edit.html.erb</p>
+<h3>Update  student</h3>
+<%= form_with model: @student do |f|%>
+<%= f.text_field :name, placeholder: "Name"%>
+<%= f.text_field :age, placeholder: "Age"%>
+<%= f.submit "Save Student" %>
+<% end %>
